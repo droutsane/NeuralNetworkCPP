@@ -1,5 +1,6 @@
 #pragma once
-#include<vector>
+#include <vector>
+
 #include "Neuron.h"
 
 class Layer
@@ -8,10 +9,10 @@ public:
 	Layer() {}
 	~Layer() {}
 
-	void printLayer() const{}
+	void printLayer() const {}
 
-protected:
-	std::vector<Neuron> listofNeurons;
-	size_t numberofNeuronInLayer;
+public:
 
+	std::vector<Neuron> listOfNeurons;
+	size_t numberOfNeuronInLayer;
 };
